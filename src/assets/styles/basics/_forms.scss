@@ -1,25 +1,86 @@
-button {
-    border:0;
-    background-color: $clr1;
-    color:whitesmoke;
-    padding: 5px 10px;
-    margin: 5px;
-    cursor: pointer;
+/* Extra small devices (phones, 460pxand down) */
+@media only screen and (max-width: $mobile-breakpoint) {
+    button {
+        border: 0;
+        background-color: $clr1;
+        color: whitesmoke;
+        padding: 5px 10px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    form > * {
+        display: block;
+        width: 200px;
+        margin: 10px 0px;
+    }
+
+    .btn-link {
+        border: 0;
+        background-color: transparent;
+        text-decoration: underline;
+        transition: 0.5s;
+    }
+    .btn-link:hover {
+        background-color: $clr1;
+        transform: scale(1.1);
+    }
 }
 
-form > * {
-    display: block;
-    width: 200px;
-    margin: 10px 0px;
+/* Medium devices (landscape tablets, 720px and up) */
+@media only screen and (min-width: $narrow-breakpoint) {
+    button {
+        border: 0;
+        background-color: $clr1;
+        color: whitesmoke;
+        padding: 5px 10px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    form > * {
+        display: block;
+        width: 200px;
+        margin: 10px 0px;
+    }
+
+    .btn-link {
+        border: 0;
+        background-color: transparent;
+        text-decoration: underline;
+        transition: 0.5s;
+    }
+    .btn-link:hover {
+        background-color: $clr1;
+        transform: scale(1.1);
+    }
 }
 
-.btn-link {
-    border:0;
-    background-color: transparent;
-    text-decoration: underline;
-    transition: .5s;
-}
-.btn-link:hover {
-    background-color: $clr1;
-    transform: scale(1.1);
+/* Large devices (laptops/desktops, 960px and up) */
+@media only screen and (min-width: $normal-breakpoint) {
+    button {
+        border: 0;
+        background-color: $clr1;
+        color: whitesmoke;
+        padding: 5px 10px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    form > * {
+        display: block;
+        width: 200px;
+        margin: 10px 0px;
+    }
+
+    .btn-link {
+        border: 0;
+        background-color: transparent;
+        text-decoration: underline;
+        transition: 0.5s;
+    }
+    .btn-link:hover {
+        background-color: $clr1;
+        transform: scale(1.1);
+    }
 }

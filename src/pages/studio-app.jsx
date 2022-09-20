@@ -1,10 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
-
-
 import { loadData, onAddData, onEditData, onRemoveData } from '../store/data.actions.js'
 import { showSuccessMsg } from '../services/event-bus.service.js'
 import my_studio_image from '../assets/img/my_studio_image.png'
+import { TextList } from '../cmps/text-list'
 
 class _StudioApp extends React.Component {
     state = {
@@ -34,11 +33,12 @@ class _StudioApp extends React.Component {
                 <div className='app-main-wrapper margin-top-100px margin-bottom-100px'>
                 <div className='studio-app-page app-main-wrapper'>
                         <h2>{studioAppPage.title}</h2>
-                        <div className='flex'>
+                        <div className='app-sub-main-wrapper'>
                             <img className="info-preview-page-image" src={require(`../assets/img/${studioAppPage.img1Url}`).default} 
                                 title={studioAppPage.title} alt={studioAppPage.title} style={{ maxWidth: '300px' }} />
                             <div className='studio-app-page-about'>
-                                <span>{studioAppPage.description2}</span>
+                                <TextList textList={studioAppPage.description2}></TextList>
+                                {/* <span>{studioAppPage.description2}</span> */}
                             </div>
                         </div>
                         <img className="my-studio-image" src={my_studio_image} />

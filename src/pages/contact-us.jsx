@@ -27,7 +27,7 @@ class _ContactUs extends React.Component {
                 <div className='app-main-wrapper margin-top-100px margin-bottom-100px'>
                     <div className='contact-us-page contact-us-page-about app-main-wrapper'>
                         <h2>{contactUsPage.title}</h2>
-                        <div className='flex'>
+                        <div className='app-sub-main-wrapper'>
                             <img className="info-preview-page-image" src={require(`../assets/img/${contactUsPage.img1Url}`).default}
                                 title={contactUsPage.title} alt={contactUsPage.title} style={{ maxWidth: '300px' }} />
                             <div className='contact-us-page-about'>

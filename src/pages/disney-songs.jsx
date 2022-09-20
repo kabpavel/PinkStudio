@@ -1,9 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
-
-
 import { loadData, onAddData, onEditData, onRemoveData } from '../store/data.actions.js'
 import { showSuccessMsg } from '../services/event-bus.service.js'
+import { TextList } from '../cmps/text-list'
 
 class _DisneySongs extends React.Component {
     state = {
@@ -31,16 +30,16 @@ class _DisneySongs extends React.Component {
         return (
             <section>
                 <div className='app-main-wrapper margin-top-100px margin-bottom-100px'>
-                <div className='disney-songs-page app-main-wrapper'>
+                    <div className='disney-songs-page app-main-wrapper'>
                         <h2>{disneySongsPage.title}</h2>
-                        <div className='flex'>
-                            <img className="info-preview-page-image" src={require(`../assets/img/${disneySongsPage.img1Url}`).default} 
+                        <div className='app-sub-main-wrapper'>
+                            <img className="info-preview-page-image" src={require(`../assets/img/${disneySongsPage.img1Url}`).default}
                                 title={disneySongsPage.title} alt={disneySongsPage.title} style={{ maxWidth: '300px' }} />
                             <div className='disney-songs-page-about'>
-                                <span>{disneySongsPage.description2}</span>
+                                {/* <span>{disneySongsPage.description2}</span> */}
+                                <TextList textList={disneySongsPage.description2}></TextList>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </section>

@@ -12,7 +12,7 @@ const routes = [
     {
         path:'/',
         component: HomePage,
-        label: 'ראשי',
+        label: 'ראשי'
     },
     {
         path:'/teacher',

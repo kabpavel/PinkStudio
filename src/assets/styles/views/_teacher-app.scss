@@ -1,25 +1,101 @@
-.app-main {
-    .teacher-app-page {     
-        background-color: $clr1;
-        background-repeat: no-repeat;
-        background-size: 100%;
+/* Extra small devices (phones, 460pxand down) */
+@media only screen and (max-width: $mobile-breakpoint) {
+    .app-main {
+        .teacher-app-page {
+            background-color: $clr1;
+            background-repeat: no-repeat;
+            background-size: 100%;
 
-        h2 {
-            font-family:SecularOne;
-            font-size: 1.5rem;
-            padding: 0rem 0rem 0.25rem 0rem;
+            h2 {
+                font-family: SecularOne;
+                font-size: 1.5rem;
+                padding: 0rem 0rem 0.25rem 0rem;
+            }
+
+            .app-sub-main-wrapper {
+                display: flex;
+                flex-direction: column;
+
+                .teacher-app-page-about {
+                    width: 100%;
+                    font-size: 1rem;
+                    padding: 0rem 1rem 0rem 1rem;
+                    color: #ffffff;
+                }
+            }
         }
-        
-        .teacher-app-page-about {
-            width: 100%;
-            font-size: 1rem;
-            padding: 0rem 1rem 0rem 1rem;
-            color:#ffffff;
-        }
+    }
+
+    .body-size {
+        margin: 0 auto;
+        max-width: $normal-breakpoint;
     }
 }
 
-.body-size {
-    margin: 0 auto;
-    max-width: $normal-breakpoint;
+/* Medium devices (landscape tablets, 720px and up) */
+@media only screen and (min-width: $narrow-breakpoint) {
+    .app-main {
+        .teacher-app-page {
+            background-color: $clr1;
+            background-repeat: no-repeat;
+            background-size: 100%;
+
+            h2 {
+                font-family: SecularOne;
+                font-size: 1.5rem;
+                padding: 0rem 0rem 0.25rem 0rem;
+            }
+
+            .app-sub-main-wrapper {
+                display: flex;
+                flex-direction: row;
+
+                .teacher-app-page-about {
+                    width: 100%;
+                    font-size: 1rem;
+                    padding: 0rem 1rem 0rem 1rem;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .body-size {
+        margin: 0 auto;
+        max-width: $normal-breakpoint;
+    }
+}
+
+/* Large devices (laptops/desktops, 960px and up) */
+@media only screen and (min-width: $normal-breakpoint) {
+    .app-main {
+        .teacher-app-page {
+            background-color: $clr1;
+            background-repeat: no-repeat;
+            background-size: 100%;
+
+            h2 {
+                font-family: SecularOne;
+                font-size: 1.5rem;
+                padding: 0rem 0rem 0.25rem 0rem;
+            }
+
+            .app-sub-main-wrapper {
+                display: flex;
+                flex-direction: row;
+
+                .teacher-app-page-about {
+                    width: 100%;
+                    font-size: 1rem;
+                    padding: 0rem 1rem 0rem 1rem;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .body-size {
+        margin: 0 auto;
+        max-width: $normal-breakpoint;
+    }
 }

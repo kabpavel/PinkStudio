@@ -1,8 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { InfoList } from '../cmps/info-list'
-
 import { loadData } from '../store/data.actions.js'
+import { InfoList } from '../cmps/info-list'
 
 class _HomePage extends React.Component {
 
@@ -45,7 +44,7 @@ class _HomePage extends React.Component {
                     <div className='home-page home-page-about app-main-wrapper'>
                         <h2>{homePage.title}</h2>
                         <div className='home-page-about'>
-                            <span>{homePage.description1}</span>
+                            <p>{homePage.description1}</p>
                         </div>
                     </div>
                     <div>

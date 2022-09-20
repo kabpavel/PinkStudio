@@ -1,10 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
-
-
 import { loadData, onAddData, onEditData, onRemoveData } from '../store/data.actions.js'
 import { showSuccessMsg } from '../services/event-bus.service.js'
 import flayer from '../assets/img/flayer-little-ones.jpeg'
+import { TextList } from '../cmps/text-list'
 
 class _MusicLittleOnesApp extends React.Component {
     state = {
@@ -22,6 +21,8 @@ class _MusicLittleOnesApp extends React.Component {
         return musicLittleOnesAppPage;
     }
 
+
+
     render() {
         const { data } = this.props
         console.log('data', data)
@@ -32,13 +33,14 @@ class _MusicLittleOnesApp extends React.Component {
         return (
             <section>
                 <div className='app-main-wrapper margin-top-100px margin-bottom-100px'>
-                <div className='music-little-ones-app-page app-main-wrapper'>
+                    <div className='music-little-ones-app-page app-main-wrapper'>
                         <h2>{musicLittleOnesAppPage.title}</h2>
-                        <div className='flex'>
-                            <img className="info-preview-page-image" src={require(`../assets/img/${musicLittleOnesAppPage.img1Url}`).default} 
+                        <div className='app-sub-main-wrapper'>
+                            <img className="info-preview-page-image" src={require(`../assets/img/${musicLittleOnesAppPage.img1Url}`).default}
                                 title={musicLittleOnesAppPage.title} alt={musicLittleOnesAppPage.title} style={{ maxWidth: '300px' }} />
                             <div className='music-little-ones-app-page-about'>
-                                <span>{musicLittleOnesAppPage.description2}</span>
+                                <TextList textList={musicLittleOnesAppPage.description2}></TextList>
+                                {/* <p>{musicLittleOnesAppPage.description2}</p> */}
                             </div>
                         </div>
                         <img className="flayer-image" src={flayer} />

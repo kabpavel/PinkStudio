@@ -1,6 +1,29 @@
-.info-list {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: $clr1;
-    width: 100%;
+/* Extra small devices (phones, 460pxand down) */
+@media only screen and (max-width: $mobile-breakpoint) {
+    .info-list {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $clr1;
+        width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 720px and up) */
+@media only screen and (min-width: $narrow-breakpoint) {
+    .info-list {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $clr1;
+        width: 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 960px and up) */
+@media only screen and (min-width: $normal-breakpoint) {
+    .info-list {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $clr1;
+        width: 100%;
+    }
 }

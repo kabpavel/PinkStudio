@@ -1,9 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
-
-
 import { loadData, onAddData, onEditData, onRemoveData } from '../store/data.actions.js'
 import { showSuccessMsg } from '../services/event-bus.service.js'
+import { TextList } from '../cmps/text-list'
 
 class _VocalCoachApp extends React.Component {
     state = {
@@ -33,11 +32,12 @@ class _VocalCoachApp extends React.Component {
                 <div className='app-main-wrapper margin-top-100px margin-bottom-100px'>
                 <div className='vocal-coach-app app-main-wrapper'>
                         <h2>{vocalCoachAppPage.title}</h2>
-                        <div className='flex' >
+                        <div className='app-sub-main-wrapper' >
                             <img className="info-preview-page-image" src={require(`../assets/img/${vocalCoachAppPage.img1Url}`).default} 
                                 title={vocalCoachAppPage.title} alt={vocalCoachAppPage.title} style={{ maxWidth: '300px' }} />
                             <div className='vocal-coach-app-about'>
-                                <span>{vocalCoachAppPage.description2}</span>
+                                {/* <span>{vocalCoachAppPage.description2}</span> */}
+                                <TextList textList={vocalCoachAppPage.description2}></TextList>
                             </div>
                         </div>
                     </div>
