@@ -1,0 +1,30 @@
+.app-main {
+    .home-page {
+        height: 630px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        background-color: transparent;
+        background-image: url("../../img/back_ground_img1.png"), linear-gradient(180deg, $clr8 0%, $clr7 100%);
+        opacity: 0.8;
+        mix-blend-mode: lighten;
+        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+
+        h2 {
+            font-family: SecularOne;
+            font-size: 1.5rem;
+            padding: 1rem, 0, 1rem, 1rem;
+        }
+
+        .home-page-about {
+            width: 20%;
+            font-size: 1rem;
+            padding: 1rem;
+        }
+    }
+}
+
+.body-size {
+    margin: 0 auto;
+    max-width: $normal-breakpoint;
+}

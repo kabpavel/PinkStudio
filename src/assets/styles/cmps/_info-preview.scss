@@ -1,0 +1,45 @@
+.info-preview {
+    width: 31.33%;
+    padding: 1% 1% 1% 1%;
+
+
+    &:first-child {
+        padding: 1% 1% 1% 1%;
+    }
+
+    &:last-child {
+        padding: 1% 1% 1% 1%;
+    }
+
+    .info-preview-wrap {
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+
+        
+        .info-preview-image {
+            width: 300px;
+            height: 300px;
+
+            border-radius: 30px 30px 30px 30px;
+        }
+
+        .info-preview-title {
+            font-family: VarelaRound;
+            text-align: center;
+            color: $clr8;
+            width: 100%;
+            //padding: 5px 2px 5px 2px;
+            font-size: 22px;
+        }
+
+        .info-preview-description1 p{
+            color: $clr9;
+            //padding: 0 5px 5px 10px;
+            display: inline-block;
+            width:  100%;
+            font-size: 16px;
+        }
+    }
+
+}

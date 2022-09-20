@@ -1,0 +1,25 @@
+.app-main {
+    .disney-songs-page {     
+        background-color: $clr1;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        h2 {
+            font-family:SecularOne;
+            font-size: 1.5rem;
+            padding: 1rem , 0, 1rem, 1rem;
+        }
+        
+        .disney-songs-page-about {
+            width: 100%;
+            font-size: 1rem;
+            padding: 1rem;
+            color:#ffffff;
+        }
+    }
+}
+
+.body-size {
+    margin: 0 auto;
+    max-width: $normal-breakpoint;
+}

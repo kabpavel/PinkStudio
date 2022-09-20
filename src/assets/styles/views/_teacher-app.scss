@@ -1,0 +1,25 @@
+.app-main {
+    .teacher-app-page {     
+        background-color: $clr1;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        h2 {
+            font-family:SecularOne;
+            font-size: 1.5rem;
+            padding: 0rem 0rem 0.25rem 0rem;
+        }
+        
+        .teacher-app-page-about {
+            width: 100%;
+            font-size: 1rem;
+            padding: 0rem 1rem 0rem 1rem;
+            color:#ffffff;
+        }
+    }
+}
+
+.body-size {
+    margin: 0 auto;
+    max-width: $normal-breakpoint;
+}
