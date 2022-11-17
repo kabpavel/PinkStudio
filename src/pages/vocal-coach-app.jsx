@@ -29,7 +29,7 @@ class _VocalCoachApp extends React.Component {
 
         return (
             <section>
-                <div className='app-main-wrapper margin-top-100px margin-bottom-100px'>
+                <div className='margin-top-60px margin-bottom-100px'>
                 <div className='vocal-coach-app app-main-wrapper'>
                         <h2>{vocalCoachAppPage.title}</h2>
                         <div className='app-sub-main-wrapper' >
