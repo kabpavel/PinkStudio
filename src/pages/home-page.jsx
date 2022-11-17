@@ -40,7 +40,7 @@ class _HomePage extends React.Component {
         
         return (
             <section>
-                <div className='margin-top-100px margin-bottom-100px'>
+                <div className='margin-top-90px margin-bottom-50px'>
                     <div className='home-page home-page-about app-main-wrapper'>
                         <h2>{homePage.title}</h2>
                         <div className='home-page-about'>

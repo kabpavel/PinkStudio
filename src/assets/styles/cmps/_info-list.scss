@@ -3,6 +3,7 @@
     .info-list {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         background-color: $clr1;
         width: 100%;
     }

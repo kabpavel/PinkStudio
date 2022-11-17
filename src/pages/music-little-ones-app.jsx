@@ -32,7 +32,7 @@ class _MusicLittleOnesApp extends React.Component {
 
         return (
             <section>
-                <div className='app-main-wrapper margin-top-100px margin-bottom-100px'>
+                <div className='margin-top-60px margin-bottom-100px'>
                     <div className='music-little-ones-app-page app-main-wrapper'>
                         <h2>{musicLittleOnesAppPage.title}</h2>
                         <div className='app-sub-main-wrapper'>

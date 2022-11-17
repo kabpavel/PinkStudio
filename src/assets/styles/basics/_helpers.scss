@@ -38,10 +38,39 @@
     @include aspect-ratio(9, 16);
 }
 
+
+.margin-top-60px{
+    margin-top: 60px;
+}
+
+.margin-bottom-60px{
+    margin-bottom: 60px;
+}
+
+.margin-top-70px{
+    margin-top: 70px;
+}
+
+.margin-bottom-70px{
+    margin-bottom: 70px;
+}
+
+.margin-top-90px{
+    margin-top: 90px;
+}
+
+.margin-bottom-90px{
+    margin-bottom: 90px;
+}
+
 .margin-top-100px{
-    margin: 100px 0 0 0;
+    margin-top: 100px;
 }
 
 .margin-bottom-100px{
-    margin: 0 0 100px 0;
+    margin-bottom: 100px;
+}
+
+.width-screen-width{
+    width: 100%;
 }
