@@ -1,12 +1,14 @@
 import Axios from 'axios'
 
-const BASE_URL = process.env.NODE_ENV === 'production'
-    ? '/api/teacher'
-    : '//localhost:3030/api/teacher'
-
 var axios = Axios.create({
     withCredentials: true
 })
+
+const BASE_URL = (process.env.NODE_ENV === 'production')
+    ? '/api/teacher'
+    : '//localhost:3030/api/teacher'
+
+
 
 export const httpService = {
     get(endpoint, data) {
